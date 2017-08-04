@@ -1,6 +1,10 @@
 Chromium Embedded Framework (CEF) Standard Binary Distribution for Windows
 -------------------------------------------------------------------------------
 
+由于DLL文件太大占用github空间，所以DLL文件放到百度网盘中。下载地址如下：
+相关DLL下载地址：http://pan.baidu.com/s/1hsmWCja
+
+
 Date:             May 03, 2016
 
 CEF Version:      3.2623.1397.gaf139d7
