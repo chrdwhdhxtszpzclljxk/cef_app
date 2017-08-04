@@ -89,13 +89,13 @@ int RunMain(HINSTANCE hInstance, int nCmdShow) {
 
   // Register scheme handlers.
   test_runner::RegisterSchemeHandlers();
-
+  std::string url = MainContext::Get()->GetAppWorkingDirectory();
   // Create the first window.
   context->GetRootWindowManager()->CreateRootWindow(
       true,             // Show controls.
       settings.windowless_rendering_enabled ? true : false,
-      CefRect(),        // Use default system size.
-      std::string());   // Use default URL.
+      CefRect(0,0,300,600),        // Use default system size.
+      std::string("http://www.qq.com"));   // Use default URL.
 
   // Run the message loop. This will block until Quit() is called by the
   // RootWindowManager after all windows have been destroyed.
