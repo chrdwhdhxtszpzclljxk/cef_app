@@ -71,11 +71,11 @@
 # Linux platform or a 64-bit CEF binary distribution on a 64-bit Linux platform:
 #   Using Unix Makefiles:
 #     > cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug ..
-#     > make -j4 cefclient cefsimple
+#     > make -j4 cefclient
 #
 #   Using Ninja:
 #     > cmake -G "Ninja" -DCMAKE_BUILD_TYPE=Debug ..
-#     > ninja cefclient cefsimple
+#     > ninja cefclient 
 #
 # To perform a Mac OS X build using a 32-bit CEF binary distribution:
 #   Using the Xcode IDE:
@@ -84,7 +84,7 @@
 #
 #   Using Ninja:
 #     > cmake -G "Ninja" -DPROJECT_ARCH="i386" -DCMAKE_BUILD_TYPE=Debug ..
-#     > ninja cefclient cefsimple
+#     > ninja cefclient 
 #
 # To perform a Mac OS X build using a 64-bit CEF binary distribution:
 #   Using the Xcode IDE:
@@ -93,7 +93,7 @@
 #
 #   Using Ninja:
 #     > cmake -G "Ninja" -DPROJECT_ARCH="x86_64" -DCMAKE_BUILD_TYPE=Debug ..
-#     > ninja cefclient cefsimple
+#     > ninja cefclient 
 #
 # To perform a Windows build using a 32-bit CEF binary distribution:
 #   Using the Visual Studio 2013 IDE:
@@ -104,7 +104,7 @@
 #     (this path may be different depending on your Visual Studio installation)
 #     > "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\vcvars32.bat"
 #     > cmake -G "Ninja" -DCMAKE_BUILD_TYPE=Debug ..
-#     > ninja cefclient cefsimple
+#     > ninja cefclient 
 #
 # To perform a Windows build using a 64-bit CEF binary distribution:
 #   Using the Visual Studio 2013 IDE:
@@ -115,7 +115,7 @@
 #     (this path may be different depending on your Visual Studio installation)
 #     > "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\vcvars64.bat"
 #     > cmake -G "Ninja" -DCMAKE_BUILD_TYPE=Debug ..
-#     > ninja cefclient cefsimple
+#     > ninja cefclient 
 
 #
 # Shared configuration.
@@ -530,7 +530,7 @@ set(CMAKE_SHARED_LINKER_FLAGS_RELEASE "${CEF_LINKER_FLAGS_RELEASE} ${CEF_SHARED_
 
 add_subdirectory(libcef_dll)
 add_subdirectory(cefclient)
-add_subdirectory(cefsimple)
+
 
 
 #
